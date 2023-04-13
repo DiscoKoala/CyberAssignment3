@@ -4,3 +4,4 @@ resources/init.tcl
 resources/nam.exe
 resources/ns.exe
 resources/sample.tcl
+__pycache__/packet.cpython-38.pyc
