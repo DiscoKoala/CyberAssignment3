@@ -9,9 +9,12 @@ def main():
     p.readFile(user1, user2, user3, user4)
     
     p.userDegRatio(user1, 1)
-    # p.userDegRatio(user2, 2)
-    # p.userDegRatio(user3, 3)
-    # p.userDegRatio(user4, 4)
+    print("\n")
+    p.userDegRatio(user2, 2)
+    print("\n")
+    p.userDegRatio(user3, 3)
+    print("\n")
+    p.userDegRatio(user4, 4)
     
 
     

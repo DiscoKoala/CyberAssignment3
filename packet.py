@@ -15,6 +15,9 @@ def readFile(user1, user2, user3, user4):
     for line in file:
         line = file.readline()
         field = line.split()
+        
+        if len(field) <= 0:
+            break
 
         if float(field[8]) == 0.0:
             user1.append(packet(field[0], field[1], field[8], field[11]))
