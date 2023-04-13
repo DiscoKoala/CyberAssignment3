@@ -143,6 +143,48 @@ set bot34 [$ns node]
 set bot35 [$ns node]
       puts "bot35: [$bot35 id]"
 
+set bot36 [$ns node]
+      puts "bot36: [$bot36 id]"
+
+set bot37 [$ns node]
+      puts "bot37: [$bot37 id]"
+
+set bot38 [$ns node]
+      puts "bot38: [$bot38 id]"
+
+set bot39 [$ns node]
+      puts "bot39: [$bot39 id]"
+
+set bot40 [$ns node]
+      puts "bot40: [$bot40 id]"
+
+set bot41 [$ns node]
+      puts "bot41: [$bot41 id]"
+
+set bot42 [$ns node]
+      puts "bot42: [$bot42 id]"
+
+set bot43 [$ns node]
+      puts "bot43: [$bot43 id]"
+
+set bot44 [$ns node]
+      puts "bot44: [$bot44 id]"
+
+set bot45 [$ns node]
+      puts "bot45: [$bot45 id]"
+
+set bot46 [$ns node]
+      puts "bot46: [$bot46 id]"
+
+set bot47 [$ns node]
+      puts "bot47: [$bot47 id]"
+
+set bot48 [$ns node]
+      puts "bot48: [$bot48 id]"
+
+set bot49 [$ns node]
+      puts "bot49: [$bot49 id]"
+
 #Routers
 
 set router01 [$ns node]
@@ -293,6 +335,47 @@ $bot34 label "bot34"
 $bot35 color red
 $bot35 label "bot35"
 
+$bot36 color red
+$bot36 label "bot36"
+
+$bot37 color red
+$bot37 label "bot37"
+
+$bot38 color red
+$bot38 label "bot38"
+
+$bot39 color red
+$bot39 label "bot39"
+
+$bot40 color red
+$bot40 label "bot40"
+
+$bot41 color red
+$bot41 label "bot41"
+
+$bot42 color red
+$bot42 label "bot42"
+
+$bot43 color red
+$bot43 label "bot43"
+
+$bot44 color red
+$bot44 label "bot44"
+
+$bot45 color red
+$bot45 label "bot45"
+
+$bot46 color red
+$bot46 label "bot46"
+
+$bot47 color red
+$bot47 label "bot47"
+
+$bot48 color red
+$bot48 label "bot48"
+
+$bot49 color red
+$bot49 label "bot49"
 
 
 #
@@ -309,38 +392,52 @@ $ns duplex-link $user04 $router05 4mb 5ms RED
 $ns duplex-link $bot01 $router01 4mb 5ms RED
 $ns duplex-link $bot02 $router01 4mb 5ms RED
 $ns duplex-link $bot03 $router01 4mb 5ms RED
-$ns duplex-link $bot04 $router02 4mb 5ms RED
-$ns duplex-link $bot05 $router02 4mb 5ms RED
-$ns duplex-link $bot06 $router02 4mb 5ms RED
-$ns duplex-link $bot07 $router04 4mb 5ms RED
-$ns duplex-link $bot08 $router04 4mb 5ms RED
-$ns duplex-link $bot09 $router04 4mb 5ms RED
-$ns duplex-link $bot10 $router04 4mb 5ms RED
-$ns duplex-link $bot11 $router01 4mb 5ms RED
-$ns duplex-link $bot12 $router01 4mb 5ms RED
-$ns duplex-link $bot13 $router01 4mb 5ms RED
+$ns duplex-link $bot04 $router01 4mb 5ms RED
+$ns duplex-link $bot05 $router01 4mb 5ms RED
+$ns duplex-link $bot06 $router01 4mb 5ms RED
+$ns duplex-link $bot07 $router01 4mb 5ms RED
+$ns duplex-link $bot08 $router02 4mb 5ms RED
+$ns duplex-link $bot09 $router02 4mb 5ms RED
+$ns duplex-link $bot10 $router02 4mb 5ms RED
+$ns duplex-link $bot11 $router02 4mb 5ms RED
+$ns duplex-link $bot12 $router02 4mb 5ms RED
+$ns duplex-link $bot13 $router02 4mb 5ms RED
 $ns duplex-link $bot14 $router02 4mb 5ms RED
-$ns duplex-link $bot15 $router02 4mb 5ms RED
-$ns duplex-link $bot16 $router02 4mb 5ms RED
-$ns duplex-link $bot17 $router04 4mb 5ms RED
-$ns duplex-link $bot18 $router04 4mb 5ms RED
-$ns duplex-link $bot19 $router04 4mb 5ms RED
-$ns duplex-link $bot20 $router04 4mb 5ms RED
-$ns duplex-link $bot21 $router04 4mb 5ms RED
-$ns duplex-link $bot22 $router01 4mb 5ms RED
-$ns duplex-link $bot23 $router01 4mb 5ms RED
-$ns duplex-link $bot24 $router01 4mb 5ms RED
-$ns duplex-link $bot25 $router02 4mb 5ms RED
-$ns duplex-link $bot26 $router02 4mb 5ms RED
-$ns duplex-link $bot27 $router02 4mb 5ms RED
+$ns duplex-link $bot15 $router03 4mb 5ms RED
+$ns duplex-link $bot16 $router03 4mb 5ms RED
+$ns duplex-link $bot17 $router03 4mb 5ms RED
+$ns duplex-link $bot18 $router03 4mb 5ms RED
+$ns duplex-link $bot19 $router03 4mb 5ms RED
+$ns duplex-link $bot20 $router03 4mb 5ms RED
+$ns duplex-link $bot21 $router03 4mb 5ms RED
+$ns duplex-link $bot22 $router04 4mb 5ms RED
+$ns duplex-link $bot23 $router04 4mb 5ms RED
+$ns duplex-link $bot24 $router04 4mb 5ms RED
+$ns duplex-link $bot25 $router04 4mb 5ms RED
+$ns duplex-link $bot26 $router04 4mb 5ms RED
+$ns duplex-link $bot27 $router04 4mb 5ms RED
 $ns duplex-link $bot28 $router04 4mb 5ms RED
-$ns duplex-link $bot29 $router04 4mb 5ms RED
-$ns duplex-link $bot30 $router04 4mb 5ms RED
-$ns duplex-link $bot31 $router04 4mb 5ms RED
-$ns duplex-link $bot32 $router01 4mb 5ms RED
-$ns duplex-link $bot33 $router01 4mb 5ms RED
-$ns duplex-link $bot34 $router02 4mb 5ms RED
-$ns duplex-link $bot35 $router02 4mb 5ms RED
+$ns duplex-link $bot29 $router05 4mb 5ms RED
+$ns duplex-link $bot30 $router05 4mb 5ms RED
+$ns duplex-link $bot31 $router05 4mb 5ms RED
+$ns duplex-link $bot32 $router05 4mb 5ms RED
+$ns duplex-link $bot33 $router05 4mb 5ms RED
+$ns duplex-link $bot34 $router05 4mb 5ms RED
+$ns duplex-link $bot35 $router05 4mb 5ms RED
+$ns duplex-link $bot36 $router06 4mb 5ms RED
+$ns duplex-link $bot37 $router06 4mb 5ms RED
+$ns duplex-link $bot38 $router06 4mb 5ms RED
+$ns duplex-link $bot39 $router06 4mb 5ms RED
+$ns duplex-link $bot40 $router06 4mb 5ms RED
+$ns duplex-link $bot41 $router06 4mb 5ms RED
+$ns duplex-link $bot42 $router06 4mb 5ms RED
+$ns duplex-link $bot43 $router07 4mb 5ms RED
+$ns duplex-link $bot44 $router07 4mb 5ms RED
+$ns duplex-link $bot45 $router07 4mb 5ms RED
+$ns duplex-link $bot46 $router07 4mb 5ms RED
+$ns duplex-link $bot47 $router07 4mb 5ms RED
+$ns duplex-link $bot48 $router07 4mb 5ms RED
+$ns duplex-link $bot49 $router07 4mb 5ms RED
 
 # Router connections
 $ns duplex-link $router01 $router03 4mb 5ms RED
@@ -481,23 +578,65 @@ $ns attach-agent $bot34 $udp_bot34
 set udp_bot35 [new Agent/UDP]
 $ns attach-agent $bot35 $udp_bot35
 
+set udp_bot36 [new Agent/UDP]
+$ns attach-agent $bot36 $udp_bot36
+
+set udp_bot37 [new Agent/UDP]
+$ns attach-agent $bot37 $udp_bot37
+
+set udp_bot38 [new Agent/UDP]
+$ns attach-agent $bot38 $udp_bot38
+
+set udp_bot39 [new Agent/UDP]
+$ns attach-agent $bot39 $udp_bot39
+
+set udp_bot40 [new Agent/UDP]
+$ns attach-agent $bot40 $udp_bot40
+
+set udp_bot41 [new Agent/UDP]
+$ns attach-agent $bot41 $udp_bot41
+
+set udp_bot42 [new Agent/UDP]
+$ns attach-agent $bot42 $udp_bot42
+
+set udp_bot43 [new Agent/UDP]
+$ns attach-agent $bot43 $udp_bot43
+
+set udp_bot44 [new Agent/UDP]
+$ns attach-agent $bot44 $udp_bot44
+
+set udp_bot45 [new Agent/UDP]
+$ns attach-agent $bot45 $udp_bot45
+
+set udp_bot46 [new Agent/UDP]
+$ns attach-agent $bot46 $udp_bot46
+
+set udp_bot47 [new Agent/UDP]
+$ns attach-agent $bot47 $udp_bot47
+
+set udp_bot48 [new Agent/UDP]
+$ns attach-agent $bot48 $udp_bot48
+
+set udp_bot49 [new Agent/UDP]
+$ns attach-agent $bot49 $udp_bot49
+
 #
 #Setup traffic sources
 #
 set cbr_user01 [new Application/Traffic/CBR]
-$cbr_user01 set rate_ 100Kb
+$cbr_user01 set rate_ 500Kb
 $cbr_user01 attach-agent $udp_user01
 
 set cbr_user02 [new Application/Traffic/CBR]
-$cbr_user02 set rate_ 100Kb
+$cbr_user02 set rate_ 500Kb
 $cbr_user02 attach-agent $udp_user02
 
 set cbr_user03 [new Application/Traffic/CBR]
-$cbr_user03 set rate_ 100Kb
+$cbr_user03 set rate_ 500Kb
 $cbr_user03 attach-agent $udp_user03
 
 set cbr_user04 [new Application/Traffic/CBR]
-$cbr_user04 set rate_ 100Kb
+$cbr_user04 set rate_ 500Kb
 $cbr_user04 attach-agent $udp_user04
 
 
@@ -641,6 +780,62 @@ set cbr_bot35 [new Application/Traffic/CBR]
 $cbr_bot35 set rate_ 100kb
 $cbr_bot35 attach-agent $udp_bot35
 
+set cbr_bot36 [new Application/Traffic/CBR]
+$cbr_bot36 set rate_ 100kb
+$cbr_bot36 attach-agent $udp_bot36
+
+set cbr_bot37 [new Application/Traffic/CBR]
+$cbr_bot37 set rate_ 100kb
+$cbr_bot37 attach-agent $udp_bot37
+
+set cbr_bot38 [new Application/Traffic/CBR]
+$cbr_bot38 set rate_ 100kb
+$cbr_bot38 attach-agent $udp_bot38
+
+set cbr_bot39 [new Application/Traffic/CBR]
+$cbr_bot39 set rate_ 100kb
+$cbr_bot39 attach-agent $udp_bot39
+
+set cbr_bot40 [new Application/Traffic/CBR]
+$cbr_bot40 set rate_ 100kb
+$cbr_bot40 attach-agent $udp_bot40
+
+set cbr_bot41 [new Application/Traffic/CBR]
+$cbr_bot41 set rate_ 100kb
+$cbr_bot41 attach-agent $udp_bot41
+
+set cbr_bot42 [new Application/Traffic/CBR]
+$cbr_bot42 set rate_ 100kb
+$cbr_bot42 attach-agent $udp_bot42
+
+set cbr_bot43 [new Application/Traffic/CBR]
+$cbr_bot43 set rate_ 100kb
+$cbr_bot43 attach-agent $udp_bot43
+
+set cbr_bot44 [new Application/Traffic/CBR]
+$cbr_bot44 set rate_ 100kb
+$cbr_bot44 attach-agent $udp_bot44
+
+set cbr_bot45 [new Application/Traffic/CBR]
+$cbr_bot45 set rate_ 100kb
+$cbr_bot45 attach-agent $udp_bot45
+
+set cbr_bot46 [new Application/Traffic/CBR]
+$cbr_bot46 set rate_ 100kb
+$cbr_bot46 attach-agent $udp_bot46
+
+set cbr_bot47 [new Application/Traffic/CBR]
+$cbr_bot47 set rate_ 100kb
+$cbr_bot47 attach-agent $udp_bot47
+
+set cbr_bot48 [new Application/Traffic/CBR]
+$cbr_bot48 set rate_ 100kb
+$cbr_bot48 attach-agent $udp_bot48
+
+set cbr_bot49 [new Application/Traffic/CBR]
+$cbr_bot49 set rate_ 100kb
+$cbr_bot49 attach-agent $udp_bot49
+
 #connect traffic sources to traffic destination (for CBR components, the destination is defined as a NULL component)
 $ns connect $udp_user01 $null_WebServer
 $ns connect $udp_user02 $null_WebServer
@@ -682,6 +877,20 @@ $ns connect $udp_bot32 $null_WebServer
 $ns connect $udp_bot33 $null_WebServer
 $ns connect $udp_bot34 $null_WebServer
 $ns connect $udp_bot35 $null_WebServer
+$ns connect $udp_bot36 $null_WebServer
+$ns connect $udp_bot37 $null_WebServer
+$ns connect $udp_bot38 $null_WebServer
+$ns connect $udp_bot39 $null_WebServer
+$ns connect $udp_bot40 $null_WebServer
+$ns connect $udp_bot41 $null_WebServer
+$ns connect $udp_bot42 $null_WebServer
+$ns connect $udp_bot43 $null_WebServer
+$ns connect $udp_bot44 $null_WebServer
+$ns connect $udp_bot45 $null_WebServer
+$ns connect $udp_bot46 $null_WebServer
+$ns connect $udp_bot47 $null_WebServer
+$ns connect $udp_bot48 $null_WebServer
+$ns connect $udp_bot49 $null_WebServer
 
 
 #define colors for traffic types (bot vs. user)
@@ -724,6 +933,20 @@ $udp_bot32 set fid_ 2
 $udp_bot33 set fid_ 2
 $udp_bot34 set fid_ 2
 $udp_bot35 set fid_ 2
+$udp_bot36 set fid_ 2
+$udp_bot37 set fid_ 2
+$udp_bot38 set fid_ 2
+$udp_bot39 set fid_ 2
+$udp_bot40 set fid_ 2
+$udp_bot41 set fid_ 2
+$udp_bot42 set fid_ 2
+$udp_bot43 set fid_ 2
+$udp_bot44 set fid_ 2
+$udp_bot45 set fid_ 2
+$udp_bot46 set fid_ 2
+$udp_bot47 set fid_ 2
+$udp_bot48 set fid_ 2
+$udp_bot49 set fid_ 2
 
 # set udp_user01 (user) traffic color to green
 $udp_user01 set fid_ 1 
@@ -773,6 +996,20 @@ $ns at 0 "$cbr_bot32 start"
 $ns at 0 "$cbr_bot33 start"
 $ns at 0 "$cbr_bot34 start"
 $ns at 0 "$cbr_bot35 start"
+$ns at 0 "$cbr_bot36 start"
+$ns at 0 "$cbr_bot37 start"
+$ns at 0 "$cbr_bot38 start"
+$ns at 0 "$cbr_bot39 start"
+$ns at 0 "$cbr_bot40 start"
+$ns at 0 "$cbr_bot41 start" 
+$ns at 0 "$cbr_bot42 start"
+$ns at 0 "$cbr_bot43 start"
+$ns at 0 "$cbr_bot44 start"
+$ns at 0 "$cbr_bot45 start"
+$ns at 0 "$cbr_bot46 start"
+$ns at 0 "$cbr_bot47 start"
+$ns at 0 "$cbr_bot48 start"
+$ns at 0 "$cbr_bot49 start"
 
 # Start cbr_users at time 1
 $ns at 1 "$cbr_user01 start"
