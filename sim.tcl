@@ -31,6 +31,7 @@ set user03 [$ns node]
 set user04 [$ns node]
       puts "user04: [$user04 id]"
 
+
 set WebServer [$ns node]
       puts "WebServer: [$WebServer id]"
 
@@ -269,6 +270,7 @@ $bot31 color red
 $bot31 label "bot31"
 
 
+
 #
 # Setup Connections
 #
@@ -440,11 +442,9 @@ set udp_bot31 [new Agent/UDP]
 $ns attach-agent $bot31 $udp_bot31
 
 
-
 #
 #Setup traffic sources
 #
-
 set cbr_user01 [new Application/Traffic/CBR]
 $cbr_user01 set rate_ 100Kb
 $cbr_user01 attach-agent $udp_user01
@@ -463,132 +463,131 @@ $cbr_user04 attach-agent $udp_user04
 
 
 set cbr_bot01 [new Application/Traffic/CBR]
-$cbr_bot01 set rate_ 1mb
+$cbr_bot01 set rate_ 100kb
 $cbr_bot01 attach-agent $udp_bot01
 
 set cbr_bot02 [new Application/Traffic/CBR]
-$cbr_bot02 set rate_ 1mb
+$cbr_bot02 set rate_ 100kb
 $cbr_bot02 attach-agent $udp_bot02
 
 set cbr_bot03 [new Application/Traffic/CBR]
-$cbr_bot03 set rate_ 1mb
+$cbr_bot03 set rate_ 100kb
 $cbr_bot03 attach-agent $udp_bot03
 
 set cbr_bot04 [new Application/Traffic/CBR]
-$cbr_bot04 set rate_ 1mb
+$cbr_bot04 set rate_ 100kb
 $cbr_bot04 attach-agent $udp_bot04
 
 set cbr_bot05 [new Application/Traffic/CBR]
-$cbr_bot05 set rate_ 1mb
+$cbr_bot05 set rate_ 100kb
 $cbr_bot05 attach-agent $udp_bot05
 
 set cbr_bot06 [new Application/Traffic/CBR]
-$cbr_bot06 set rate_ 1mb
+$cbr_bot06 set rate_ 100kb
 $cbr_bot06 attach-agent $udp_bot06
 
 set cbr_bot07 [new Application/Traffic/CBR]
-$cbr_bot07 set rate_ 1mb
+$cbr_bot07 set rate_ 100kb
 $cbr_bot07 attach-agent $udp_bot07
 
 set cbr_bot08 [new Application/Traffic/CBR]
-$cbr_bot08 set rate_ 1mb
+$cbr_bot08 set rate_ 100kb
 $cbr_bot08 attach-agent $udp_bot08
 
 set cbr_bot09 [new Application/Traffic/CBR]
-$cbr_bot09 set rate_ 1mb
+$cbr_bot09 set rate_ 100kb
 $cbr_bot09 attach-agent $udp_bot09
 
 set cbr_bot10 [new Application/Traffic/CBR]
-$cbr_bot10 set rate_ 1mb
+$cbr_bot10 set rate_ 100kb
 $cbr_bot10 attach-agent $udp_bot10
 
 set cbr_bot11 [new Application/Traffic/CBR]
-$cbr_bot11 set rate_ 1mb
+$cbr_bot11 set rate_ 100kb
 $cbr_bot11 attach-agent $udp_bot11
 
 set cbr_bot12 [new Application/Traffic/CBR]
-$cbr_bot12 set rate_ 1mb
+$cbr_bot12 set rate_ 100kb
 $cbr_bot12 attach-agent $udp_bot12
 
 set cbr_bot13 [new Application/Traffic/CBR]
-$cbr_bot13 set rate_ 1mb
+$cbr_bot13 set rate_ 100kb
 $cbr_bot13 attach-agent $udp_bot13
 
 set cbr_bot14 [new Application/Traffic/CBR]
-$cbr_bot14 set rate_ 1mb
+$cbr_bot14 set rate_ 100kb
 $cbr_bot14 attach-agent $udp_bot14
 
 set cbr_bot15 [new Application/Traffic/CBR]
-$cbr_bot15 set rate_ 1mb
+$cbr_bot15 set rate_ 100kb
 $cbr_bot15 attach-agent $udp_bot15
 
 set cbr_bot16 [new Application/Traffic/CBR]
-$cbr_bot16 set rate_ 1mb
+$cbr_bot16 set rate_ 100kb
 $cbr_bot16 attach-agent $udp_bot16
 
 set cbr_bot17 [new Application/Traffic/CBR]
-$cbr_bot17 set rate_ 1mb
+$cbr_bot17 set rate_ 100kb
 $cbr_bot17 attach-agent $udp_bot17
 
 set cbr_bot18 [new Application/Traffic/CBR]
-$cbr_bot18 set rate_ 1mb
+$cbr_bot18 set rate_ 100kb
 $cbr_bot18 attach-agent $udp_bot18
 
 set cbr_bot19 [new Application/Traffic/CBR]
-$cbr_bot19 set rate_ 1mb
+$cbr_bot19 set rate_ 100kb
 $cbr_bot19 attach-agent $udp_bot19
 
 set cbr_bot20 [new Application/Traffic/CBR]
-$cbr_bot20 set rate_ 1mb
+$cbr_bot20 set rate_ 100kb
 $cbr_bot20 attach-agent $udp_bot20
 
 set cbr_bot21 [new Application/Traffic/CBR]
-$cbr_bot21 set rate_ 1mb
+$cbr_bot21 set rate_ 100kb
 $cbr_bot21 attach-agent $udp_bot21
 
 set cbr_bot22 [new Application/Traffic/CBR]
-$cbr_bot22 set rate_ 1mb
+$cbr_bot22 set rate_ 100kb
 $cbr_bot22 attach-agent $udp_bot22
 
 set cbr_bot23 [new Application/Traffic/CBR]
-$cbr_bot23 set rate_ 1mb
+$cbr_bot23 set rate_ 100kb
 $cbr_bot23 attach-agent $udp_bot23
 
 set cbr_bot24 [new Application/Traffic/CBR]
-$cbr_bot24 set rate_ 1mb
+$cbr_bot24 set rate_ 100kb
 $cbr_bot24 attach-agent $udp_bot24
 
 set cbr_bot25 [new Application/Traffic/CBR]
-$cbr_bot25 set rate_ 1mb
+$cbr_bot25 set rate_ 100kb
 $cbr_bot25 attach-agent $udp_bot25
 
 set cbr_bot26 [new Application/Traffic/CBR]
-$cbr_bot26 set rate_ 1mb
+$cbr_bot26 set rate_ 100kb
 $cbr_bot26 attach-agent $udp_bot26
 
 set cbr_bot27 [new Application/Traffic/CBR]
-$cbr_bot27 set rate_ 1mb
+$cbr_bot27 set rate_ 100kb
 $cbr_bot27 attach-agent $udp_bot27
 
 set cbr_bot28 [new Application/Traffic/CBR]
-$cbr_bot28 set rate_ 1mb
+$cbr_bot28 set rate_ 100kb
 $cbr_bot28 attach-agent $udp_bot28
 
 set cbr_bot29 [new Application/Traffic/CBR]
-$cbr_bot29 set rate_ 1mb
+$cbr_bot29 set rate_ 100kb
 $cbr_bot29 attach-agent $udp_bot29
 
 set cbr_bot30 [new Application/Traffic/CBR]
-$cbr_bot30 set rate_ 1mb
+$cbr_bot30 set rate_ 100kb
 $cbr_bot30 attach-agent $udp_bot30
 
 set cbr_bot31 [new Application/Traffic/CBR]
-$cbr_bot31 set rate_ 1mb
+$cbr_bot31 set rate_ 100kb
 $cbr_bot31 attach-agent $udp_bot31
 
 
 #connect traffic sources to traffic destination (for CBR components, the destination is defined as a NULL component)
-
 $ns connect $udp_user01 $null_WebServer
 $ns connect $udp_user02 $null_WebServer
 $ns connect $udp_user03 $null_WebServer
@@ -631,12 +630,6 @@ $ns connect $udp_bot31 $null_WebServer
 $ns color 1 green
 $ns color 2 red
 
-# set udp_user01 (user) traffic color to green
-$udp_user01 set fid_ 1 
-$udp_user02 set fid_ 1 
-$udp_user03 set fid_ 1 
-$udp_user04 set fid_ 1 
-
 #sets udp_bot01 and udp_bot02 traffic color to red
 $udp_bot01 set fid_ 2
 $udp_bot02 set fid_ 2
@@ -669,6 +662,12 @@ $udp_bot28 set fid_ 2
 $udp_bot29 set fid_ 2
 $udp_bot30 set fid_ 2
 $udp_bot31 set fid_ 2
+
+# set udp_user01 (user) traffic color to green
+$udp_user01 set fid_ 1 
+$udp_user02 set fid_ 1 
+$udp_user03 set fid_ 1 
+$udp_user04 set fid_ 1 
 
 #
 #Start up the sources
