@@ -19,8 +19,8 @@ def main():
             i += 1
         
         if field[0] == 'd':
-            q = int(field[11])
-            m = pckt[q]
+            # q = int(field[11])
+            m = pckt[int(field[11])]
             t = m.timeSent
             pckt.remove(m)
             pckt.insert(q, packet(field[0], t, field[2], field[3], field[4], field[5], field[7],
@@ -30,6 +30,8 @@ def main():
     print("Total degradation ratio", dropped / i)
 
 
+if __name__ == "__main__":
+    main()
 
 # j = 0
 

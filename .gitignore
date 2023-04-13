@@ -1,2 +1,6 @@
 .DS_Store
 out.tr
+resources/init.tcl
+resources/nam.exe
+resources/ns.exe
+resources/sample.tcl
