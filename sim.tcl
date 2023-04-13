@@ -131,6 +131,18 @@ set bot30 [$ns node]
 set bot31 [$ns node]
       puts "bot31: [$bot31 id]"
 
+set bot32 [$ns node]
+      puts "bot32: [$bot32 id]"
+
+set bot33 [$ns node]
+      puts "bot33: [$bot33 id]"
+
+set bot34 [$ns node]
+      puts "bot34: [$bot34 id]"
+
+set bot35 [$ns node]
+      puts "bot35: [$bot35 id]"
+
 #Routers
 
 set router01 [$ns node]
@@ -269,6 +281,18 @@ $bot30 label "bot30"
 $bot31 color red
 $bot31 label "bot31"
 
+$bot32 color red
+$bot32 label "bot32"
+
+$bot33 color red
+$bot33 label "bot33"
+
+$bot34 color red
+$bot34 label "bot34"
+
+$bot35 color red
+$bot35 label "bot35"
+
 
 
 #
@@ -313,6 +337,10 @@ $ns duplex-link $bot28 $router04 4mb 5ms RED
 $ns duplex-link $bot29 $router04 4mb 5ms RED
 $ns duplex-link $bot30 $router04 4mb 5ms RED
 $ns duplex-link $bot31 $router04 4mb 5ms RED
+$ns duplex-link $bot32 $router01 4mb 5ms RED
+$ns duplex-link $bot33 $router01 4mb 5ms RED
+$ns duplex-link $bot34 $router02 4mb 5ms RED
+$ns duplex-link $bot35 $router02 4mb 5ms RED
 
 # Router connections
 $ns duplex-link $router01 $router03 4mb 5ms RED
@@ -441,6 +469,17 @@ $ns attach-agent $bot30 $udp_bot30
 set udp_bot31 [new Agent/UDP]
 $ns attach-agent $bot31 $udp_bot31
 
+set udp_bot32 [new Agent/UDP]
+$ns attach-agent $bot32 $udp_bot32
+
+set udp_bot33 [new Agent/UDP]
+$ns attach-agent $bot33 $udp_bot33
+
+set udp_bot34 [new Agent/UDP]
+$ns attach-agent $bot34 $udp_bot34
+
+set udp_bot35 [new Agent/UDP]
+$ns attach-agent $bot35 $udp_bot35
 
 #
 #Setup traffic sources
@@ -586,6 +625,21 @@ set cbr_bot31 [new Application/Traffic/CBR]
 $cbr_bot31 set rate_ 100kb
 $cbr_bot31 attach-agent $udp_bot31
 
+set cbr_bot32 [new Application/Traffic/CBR]
+$cbr_bot32 set rate_ 100kb
+$cbr_bot32 attach-agent $udp_bot32
+
+set cbr_bot33 [new Application/Traffic/CBR]
+$cbr_bot33 set rate_ 100kb
+$cbr_bot33 attach-agent $udp_bot33
+
+set cbr_bot34 [new Application/Traffic/CBR]
+$cbr_bot34 set rate_ 100kb
+$cbr_bot34 attach-agent $udp_bot34
+
+set cbr_bot35 [new Application/Traffic/CBR]
+$cbr_bot35 set rate_ 100kb
+$cbr_bot35 attach-agent $udp_bot35
 
 #connect traffic sources to traffic destination (for CBR components, the destination is defined as a NULL component)
 $ns connect $udp_user01 $null_WebServer
@@ -624,6 +678,10 @@ $ns connect $udp_bot28 $null_WebServer
 $ns connect $udp_bot29 $null_WebServer
 $ns connect $udp_bot30 $null_WebServer
 $ns connect $udp_bot31 $null_WebServer
+$ns connect $udp_bot32 $null_WebServer
+$ns connect $udp_bot33 $null_WebServer
+$ns connect $udp_bot34 $null_WebServer
+$ns connect $udp_bot35 $null_WebServer
 
 
 #define colors for traffic types (bot vs. user)
@@ -662,6 +720,10 @@ $udp_bot28 set fid_ 2
 $udp_bot29 set fid_ 2
 $udp_bot30 set fid_ 2
 $udp_bot31 set fid_ 2
+$udp_bot32 set fid_ 2
+$udp_bot33 set fid_ 2
+$udp_bot34 set fid_ 2
+$udp_bot35 set fid_ 2
 
 # set udp_user01 (user) traffic color to green
 $udp_user01 set fid_ 1 
@@ -707,6 +769,10 @@ $ns at 0 "$cbr_bot28 start"
 $ns at 0 "$cbr_bot29 start"
 $ns at 0 "$cbr_bot30 start"
 $ns at 0 "$cbr_bot31 start" 
+$ns at 0 "$cbr_bot32 start"
+$ns at 0 "$cbr_bot33 start"
+$ns at 0 "$cbr_bot34 start"
+$ns at 0 "$cbr_bot35 start"
 
 # Start cbr_users at time 1
 $ns at 1 "$cbr_user01 start"
