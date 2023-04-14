@@ -31,8 +31,9 @@ def readFile(user1, user2, user3, user4):
             continue
              
 def userDegRatio(user, num):
-    total = 0
+    secondTotal = 0
     dropped = 0
+    totalDropped = 0
     sec = 1
     
     for x in range(0, len(user)):
@@ -41,18 +42,17 @@ def userDegRatio(user, num):
         # Increment sum of packets within second.
         # If action indicates dropped, increment sum of dropped packets
         if float(user[x].timeSent) <= sec:
-            total+=1
+            secondTotal+=1
             if user[x].action == 'd':
                 dropped += 1
+                totalDropped += 1
         
         # Otherwise, print degradation ratio within given second.
         # Increment to next second.
         # Reset total to account for packet that failed condition
         else:
-            if dropped == 0:
-                dropped = 1
-            ratio = total / dropped
-            print("User {} degradation ratio at time {} of %{:.2f}".format(num, sec, ratio))
+            print("User {} dropped {} of {} packets at time {} ".format(num, dropped, secondTotal, sec,))
             sec = math.ceil(float(user[x].timeSent))
-            total = 1
+            secondTotal = 1
             dropped = 0
+    return totalDropped
