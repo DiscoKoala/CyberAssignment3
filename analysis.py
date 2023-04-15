@@ -18,6 +18,7 @@ def main():
     dropped += p.userDegRatio(user3, 3)
     print("\n")
     dropped += p.userDegRatio(user4, 4)
+    print("\n")
     
     totalUserPackets = (len(user1) + len(user2) + len(user3) + len(user4))
 

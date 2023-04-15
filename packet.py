@@ -1,10 +1,11 @@
 import math
 
 class packet:
-    def __init__(self, action, timeSent, srcIP, pcktID):
+    def __init__(self, action, timeSent, srcIP, destMAC, pcktID):
         self.action =  action
         self.timeSent = timeSent
         self.srcIP = srcIP
+        self.destMAC = destMAC
         self.pcktID = pcktID
         
         
@@ -19,30 +20,39 @@ def readFile(user1, user2, user3, user4):
         if len(field) <= 0:
             break
 
-        if float(field[8]) == 0.0:
-            user1.append(packet(field[0], field[1], field[8], field[11]))
-        elif float(field[8]) == 1.0:
-            user2.append(packet(field[0], field[1], field[8], field[11]))
-        elif float(field[8]) == 2.0:
-            user3.append(packet(field[0], field[1], field[8], field[11]))
-        elif float(field[8]) == 3.0:
-            user4.append(packet(field[0], field[1], field[8], field[11]))
+        if float(field[8]) == 0.0 and field[0] == 'd' or float(field[8]) == 0.0 and float(field[3]) == 4.0 and field[0] == 'r':
+            user1.append(packet(field[0], field[1], field[8], field[3], field[11]))
+        elif float(field[8]) == 1.0 and field[0] == 'd' or float(field[8]) == 1.0 and float(field[3]) == 4 and field[0] == 'r':
+            user2.append(packet(field[0], field[1], field[8], field[3], field[11]))
+        elif float(field[8]) == 2.0 and field[0] == 'd' or float(field[8]) == 2.0 and float(field[3]) == 4 and field[0] == 'r':
+            user3.append(packet(field[0], field[1], field[8], field[3], field[11]))
+        elif float(field[8]) == 3.0 and field[0] == 'd' or float(field[8]) == 3.0 and float(field[3]) == 4 and field[0] == 'r':
+            user4.append(packet(field[0], field[1], field[8], field[3], field[11]))
         else:
             continue
              
 def userDegRatio(user, num):
     secondTotal = 0
+    # received = 0
+    # totalreceived = 0
     dropped = 0
     totalDropped = 0
+    total = 0
     sec = 1
     
     for x in range(0, len(user)):
         
+        # print(user[x].action, user[x].destMAC)
         # If timeSent is less than or equal to ceiling of second,
         # Increment sum of packets within second.
         # If action indicates dropped, increment sum of dropped packets
-        if float(user[x].timeSent) <= sec:
+        # if user[x].action == 'd':
+        #         dropped += 1
+        #         totalDropped += 1
+
+        if float(user[x].timeSent) < sec:
             secondTotal+=1
+            total += 1
             if user[x].action == 'd':
                 dropped += 1
                 totalDropped += 1
@@ -55,4 +65,5 @@ def userDegRatio(user, num):
             sec = math.ceil(float(user[x].timeSent))
             secondTotal = 1
             dropped = 0
+
     return totalDropped
