@@ -8,7 +8,11 @@ class packet:
         self.destMAC = destMAC
         self.pcktID = pcktID
         
-        
+
+# Function for reading trace files one line at a time.
+# Line is split up into an array containing trace line fields.
+# If source IP belongs to a users and is dropped,
+# or user packet arrives at destination, add to respective user list.
 def readFile(user1, user2, user3, user4):
     
     file = open("out.tr", "r")
@@ -31,8 +35,9 @@ def readFile(user1, user2, user3, user4):
         else:
             continue
              
+
 def userDegRatio(user, num):
-    secondTotal = 0
+    secondTotal = 1
     # received = 0
     # totalreceived = 0
     dropped = 0
@@ -42,13 +47,9 @@ def userDegRatio(user, num):
     
     for x in range(0, len(user)):
         
-        # print(user[x].action, user[x].destMAC)
         # If timeSent is less than or equal to ceiling of second,
         # Increment sum of packets within second.
         # If action indicates dropped, increment sum of dropped packets
-        # if user[x].action == 'd':
-        #         dropped += 1
-        #         totalDropped += 1
 
         if float(user[x].timeSent) < sec:
             secondTotal+=1
@@ -61,7 +62,10 @@ def userDegRatio(user, num):
         # Increment to next second.
         # Reset total to account for packet that failed condition
         else:
-            print("User {} dropped {} of {} packets at time {} ".format(num, dropped, secondTotal, sec,))
+            if secondTotal == 0:
+                secondTotal = 1
+            ratio = (dropped / secondTotal)*100
+            print("User {} degradation ratio of %{:.1f} at time {}".format(num, ratio, sec))
             sec = math.ceil(float(user[x].timeSent))
             secondTotal = 1
             dropped = 0
